@@ -11,8 +11,9 @@
 </head>
 <body>
 <div class="app">
+    <div class="alert-error"><strong id="error"></strong></div>
     <h1 id="login-title">Log in to NTUConnect</h1>
-    <form name="user-login" onsubmit="return connectUser()" method="post">
+    <form name="user-login" onsubmit="connectUser()" method="post">
         <span class="form-content">Username:</span>
         <input type="text" name="user-id"><br>
 

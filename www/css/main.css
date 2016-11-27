@@ -41,7 +41,6 @@ body {
     height:100%;
     margin:0px;
     padding:0px;
-    text-transform:uppercase;
     width:100%;
 }
 
@@ -57,6 +56,72 @@ body {
     padding:180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
     margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
                                    /* offset horizontal: half of text area width */
+}
+
+.form-content {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    box-sizing: content-box;
+}
+
+#map {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+h1.profile-title {
+    margin-bottom: 5px;
+}
+
+div.profile-id {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+div.profile-id img {
+    width: 250px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+nav.profile-nav ul {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-left: 0px;
+    text-align: center;
+}
+
+nav.profile-nav ul li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: -webkit-linear-gradient(white 40%, #333);
+}
+
+nav.profile-nav ul li:hover {
+    background: -webkit-linear-gradient(#333 40%, white);
+    color: white;
+}
+
+nav.profile-nav ul li {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: #333;
+}
+
+form input::after, span.form-text::after {
+    content: "\a";
+    white-space: pre;
 }
 
 /* Landscape layout (with min-width) */

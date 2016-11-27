@@ -1,14 +1,11 @@
-import * from 'menu.js';
-import * from 'index.js';
+var main_menu = new Menu("main manu");
 
-var main_nav = new Menu("main manu");
-
-main_nav.addLink("home", "#");
+main_menu.addLink("home", "#");
 main_menu.addLink("News", "#");
-main_menu.addlinK("Events", '#');
+main_menu.addLink("Events", '#');
 
 app.initialize();
 
-document.getElementById("main-menu").innerHTML = main_nav.printMenu();
+document.getElementById("main-menu").innerHTML = main_menu.printMenu();
 
-parentElement.innerHTML = main_nav.printMenu();
+//parentElement.innerHTML = main_menu.printMenu();
